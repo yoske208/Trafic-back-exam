@@ -56,7 +56,17 @@ router.get("/:id", async (req: Request, res: Response): Promise<void> => {
   });
 
 
-router.delete("/:id")
-router.put("/:id")
+  router.delete("/:id",async (req:Request,res:Response) : Promise<void> => {
+    try {
+        const user = await deleteUser(req.params.id)
+        res.json(user)
+    } catch (error:any) {
+        error.status || 404, error.message;
+
+        
+    }
+})
+
+ router.put("/:id")
 
 export default router
