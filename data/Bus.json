@@ -1,0 +1,10 @@
+[
+    {
+        "licencePlate" : "12345678",
+        "busModel" : "volvo 1990",
+        "capacity" : 50,
+        "status" : "in service",
+        "driverID" : "1234",
+        "routeID" : "1234"
+    }
+]
